@@ -1,0 +1,45 @@
+$primary: #B80000;
+
+@import "./../node_modules/bootstrap/scss/bootstrap";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+$theme-colors: (
+        "primary": $primary,
+        "stories": #FFFCF9
+);
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.text-highlight {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    left: 0;
+    opacity: 0.05;
+    height: 40%;
+    bottom: 0;
+    background: red;
+  }
+}
+// Animations
+
+.animation-hover-scale:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}

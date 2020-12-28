@@ -1,0 +1,37 @@
+.sell-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 38px;
+}
+
+.sell-input {
+  font-size: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
+}
+.sell-input.small {
+  font-size: 18px;
+}
+.sell-input.small i {
+  font-size: 18px;
+}
+.sell-input input {
+  border: none;
+  outline: none;
+}
+.sell-input input::placeholder {
+  color: #000;
+  opacity: 0.33;
+}
+.sell-input i {
+  font-size: 24px;
+}
+
+.sell-subtitle {
+  color: #565656;
+  font-size: 20px;
+}
+
+.sell-choice-item {
+  font-size: 89px;
+}
+
+/*# sourceMappingURL=sell.css.map */

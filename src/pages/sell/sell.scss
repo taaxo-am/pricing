@@ -1,0 +1,40 @@
+.sell-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 38px;
+}
+
+.sell-input {
+  font-size: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
+
+  &.small {
+    font-size: 18px;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  input {
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: #000;
+      opacity: 0.33;
+    }
+  }
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.sell-subtitle {
+  color: #565656;
+  font-size: 20px;
+}
+
+.sell-choice-item {
+  font-size: 89px;
+}
