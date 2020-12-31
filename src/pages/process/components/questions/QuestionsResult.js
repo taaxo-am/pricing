@@ -39,10 +39,10 @@ const QuestionsResult = ({values}) => {
                 <h5>Device Details</h5>
                 <ul className='px-3 py-3'>
                     {
-                        values && values.map((item, index) => {
+                        values && values.map(item => {
                             return (
                                 <li key={item.id} className='mb-3'>
-                                    {item.answers[index].result}
+                                    {item.answers[0].result}
                                 </li>
                             )
                         })

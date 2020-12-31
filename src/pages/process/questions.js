@@ -25,11 +25,13 @@ const questions = [
         answers: [
             {
                 question: 1,
+                selected: false,
                 result: 'Some problems with Mobile Screen',
                 answer: 'Yes',
             },
             {
                 question: 1,
+                selected: false,
                 result: 'No problems with Mobile Screen',
                 answer: 'No',
             }
@@ -41,7 +43,6 @@ const questions = [
         isDeadly: false,
         answers: [
             {
-                question: 1,
                 result: 'Some effects on phone body',
                 answer: 'Yes',
             },
@@ -58,13 +59,11 @@ const questions = [
         isDeadly: false,
         answers: [
             {
-                question: 4,
-                result: 'Device can make or receive Calls',
+                result: 'Some cracks on front or back cameras',
                 answer: 'Yes',
             },
             {
-                question: 4,
-                result: 'Device cannot make or receive Calls',
+                result: 'No cracks on front or back cameras',
                 answer: 'No',
             }
         ]
@@ -74,22 +73,18 @@ const questions = [
         question: 'What’s the overall cosmetic condition?',
         answers: [
             {
-                question: 1,
                 result: 'Looks like new',
                 answer: 'Looks like new',
             },
             {
-                question: 1,
                 result: 'Light signs of use',
                 answer: 'Light signs of use',
             },
             {
-                question: 1,
                 result: 'Normal signs of use',
                 answer: 'Normal signs of use',
             },
             {
-                question: 1,
                 result: 'Heavy signs of use',
                 answer: 'Heavy signs of use',
             }
