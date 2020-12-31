@@ -4,21 +4,33 @@ import QuestionsResult from "./QuestionsResult";
 import PhysicalProblems from "./PhysicalProplems";
 import ScreenProblems from "./ScreenProblems";
 import {NavLink} from "react-router-dom";
+import questions from "../../questions";
+
+import 'bootstrap/dist/js/bootstrap.bundle'
 
 const Questions = () => {
 
     const [steps, updateSteps] = useState(1)
     const [resultList, setResultList] = useState([])
 
-    const onQuestionSelected = (answer) => {
-        console.log(answer)
-        let list = [...resultList, answer]
-        setResultList(list)
+    const onQuestionSelected = (question, answer) => {
+
+        if (question.isDeadly && answer.answer === 'No') {
+            alert('Sorry, your device cannot be sold')
+            return
+        }
+
+        if (resultList.includes(questions[question.id])) {
+            const list = [...resultList]
+        } else {
+            setResultList([...resultList, questions[question.id]])
+        }
     }
 
     return (
 
         <div className='container'>
+
             <div className='row gx-4'>
                 <div className="col-12 col-md-7">
                     {

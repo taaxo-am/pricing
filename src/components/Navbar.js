@@ -17,30 +17,26 @@ const Navbar = () => {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" />
+                            <span className="navbar-toggler-icon"/>
                         </button>
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav ms-lg-5 mb-2 mb-lg-0">
+                            <ul className="navbar-nav mx-auto">
                                 <li className="nav-item">
-                                    <NavLink className='text-decoration-none' to='/buy'>
-                                        <span className="nav-link active" aria-current="page">Buy</span>
-                                    </NavLink>
+                                    <a href='https://muraadso.com' className="nav-link"
+                                       aria-current="page">Buy</a>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className='text-decoration-none' to='/sell'>
+                                    <NavLink className='text-decoration-none' to='/process'>
                                         <span className="nav-link">Sell</span>
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <span className="nav-link">Exchange</span>
+                                    <NavLink className='text-decoration-none' to='/process'>
+                                        <span className="nav-link">Exchange</span>
+                                    </NavLink>
                                 </li>
                             </ul>
-
-                            <form className="d-flex ms-auto">
-                                <input className="form-control px-4" type="search" placeholder="Search Phone..."
-                                       aria-label="Search"/>
-                            </form>
                         </div>
                     </div>
                 </nav>

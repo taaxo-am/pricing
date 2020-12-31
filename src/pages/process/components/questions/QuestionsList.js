@@ -73,7 +73,7 @@ const QuestionsListItem = ({question, onQuestionSelected}) => {
                                         <input className="form-check-input" type="radio"
                                                name={question.id}
                                                id={question.id}
-                                               onChange={() => onQuestionSelected(a)}/>
+                                               onChange={() => onQuestionSelected(question, a)}/>
                                         <label className="form-check-label">
                                             {a.answer}
                                         </label>

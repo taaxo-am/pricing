@@ -4,7 +4,6 @@ import './hero.css'
 import heroCarouselBuy from '../../assets/hero-carouse-buy.png'
 import heroCarouselSell from '../../assets/hero-carousel-sell.png'
 import heroCarouselExchange from '../../assets/hero-carousel-exchange.png'
-import {NavLink} from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -26,7 +25,7 @@ const Carousel = () => {
         {
             name: 'SELL YOUR PHONE WITH MURAADso.com',
             action: 'SELL NOW',
-            location: '/sell',
+            location: '/process',
             img: heroCarouselSell,
         },
         {
@@ -78,7 +77,7 @@ const CarouselItem = ({item}) => {
                 <div className='col order-1 order-md-0'>
                     <div
                         className='d-flex flex-column justify-content-center align-items-center align-items-md-start h-100 ms-md-5'>
-                        <h1 className='fw-bold text-center text-md-start hero-title'>{item.name}</h1>
+                        <h1 className='fw-bold text-center text-md-start font-open-sans'>{item.name}</h1>
                         <a href={item.location}>
                             <button className='btn btn-dark rounded-pill px-5 mt-3'>{item.action}</button>
                         </a>

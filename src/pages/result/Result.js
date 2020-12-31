@@ -1,6 +1,6 @@
 import React from 'react';
 
-import iPhone from '../../../assets/img/iphone-11-pro.png'
+import iPhone from '../../assets/img/iphone-11-pro.png'
 import {NavLink} from "react-router-dom";
 
 const Result = ({price = 380}) => {

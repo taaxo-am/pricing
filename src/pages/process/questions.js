@@ -1,25 +1,27 @@
 const questions = [
     {
-        id: 1,
+        id: 0,
         question: 'Are you able to make and receive calls?',
         detail: 'Check your device for cellular network connectivity issues.',
+        isDeadly: true,
         answers: [
             {
-                id: 1,
                 answer: 'Yes',
+                selected: false,
                 result: 'Device can make or receive Calls',
             },
             {
-                id: 1,
                 answer: 'No',
+                selected: false,
                 result: 'Device cannot make or receive Calls',
             }
         ]
     },
     {
-        id: 2,
+        id: 1,
         question: 'Are there any problems with your mobile screen?',
         detail: 'Check your mobile screen for scratches, cracks, discoloration spots, lines or touch issues.',
+        isDeadly: false,
         answers: [
             {
                 question: 1,
@@ -34,8 +36,9 @@ const questions = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         question: 'Are there any defects on your phone body?',
+        isDeadly: false,
         answers: [
             {
                 question: 1,
@@ -50,8 +53,9 @@ const questions = [
         ]
     },
     {
-        id: 4,
+        id: 3,
         question: 'Are the front and back free of cracks?',
+        isDeadly: false,
         answers: [
             {
                 question: 4,
@@ -66,7 +70,7 @@ const questions = [
         ]
     },
     {
-        id: 5,
+        id: 4,
         question: 'What’s the overall cosmetic condition?',
         answers: [
             {

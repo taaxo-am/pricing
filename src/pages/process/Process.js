@@ -3,29 +3,28 @@ import {Switch, Route} from "react-router-dom";
 
 import TopDeals from "../../components/top-deals/TopDeals";
 
-import './sell.css'
+import './process.css'
 
 import Breadcrumb from "./components/Breadcrumb";
 import Home from "./components/Home";
 import ModelList from "./components/ModelList";
 import Questions from "./components/questions/Questions";
 
-const Sell = ({match}) => {
-    console.log(match)
+const Process = () => {
     return (
         <div className='container'>
             <Breadcrumb />
 
             <Switch>
-                <Route exact path={'/sell'}>
+                <Route exact path={'/process'}>
                     <Home/>
                 </Route>
 
-                <Route path='/sell/list'>
+                <Route path='/process/models'>
                     <ModelList/>
                 </Route>
 
-                <Route path={'/sell/questions'}>
+                <Route path='/process/questions'>
                     <Questions/>
                 </Route>
             </Switch>
@@ -37,4 +36,4 @@ const Sell = ({match}) => {
     );
 };
 
-export default Sell;
+export default Process;

@@ -20,7 +20,7 @@ const ModelList = () => {
                     Array(20).fill().map(n => {
                         return (
                             <div key={n} className='col'>
-                                <NavLink to='/sell/questions' className='text-body text-decoration-none'>
+                                <NavLink to='/process/questions' className='text-body text-decoration-none'>
                                     <div className='cursor-pointer card p-3'>
                                         <img className='img-fluid' src={iPhone} alt=""/>
                                         <h5 className='card-title text-center my-3'>iPhone 11 Pro</h5>

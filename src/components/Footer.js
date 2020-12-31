@@ -24,9 +24,9 @@ const Footer = () => {
 
                     <div className='col text-md-center'>
                         <h6 className='fw-bold'>Helpful Links</h6>
-                        <a href='/buy' className='d-block text-white'><small>Buy Phone</small></a>
-                        <a href='/sell' className='d-block text-white'><small>Sell Phone</small></a>
-                        <a href='/exchange' className='d-block text-white'><small>Exchange Phones</small></a>
+                        <a href='https://muraadso.com' className='d-block text-white'><small>Buy Phone</small></a>
+                        <a href='/process' className='d-block text-white'><small>Sell Phone</small></a>
+                        <a href='/process' className='d-block text-white'><small>Exchange Phones</small></a>
                     </div>
 
                     <div className="col d-flex flex-column align-items-end">

@@ -3,8 +3,8 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/home/Home";
-import Sell from "./pages/sell/Sell";
-import Result from "./pages/sell/components/Result";
+import Process from "./pages/process/Process";
+import Result from "./pages/result/Result";
 import ShippingAddress from "./pages/ShippingAddress";
 import Thanks from "./pages/Thanks";
 import Footer from "./components/Footer";
@@ -18,8 +18,8 @@ function App() {
                     <Route exact path='/'>
                         <Home/>
                     </Route>
-                    <Route path='/sell'>
-                        <Sell/>
+                    <Route path='/process'>
+                        <Process/>
                     </Route>
                     <Route path='/result'>
                         <Result />

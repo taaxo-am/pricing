@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 import bgImg from "../assets/bg-img.png";
 import React from "react";
 
-const Home = () => {
+const Home = ({type}) => {
 
     const brands = [
         {
@@ -27,13 +27,13 @@ const Home = () => {
         <div className='container'>
             <div className='card shadow-sm rounded-3 my-4'>
                 <div className='card-body p-4'>
-                    <p className='sell-title mx-5 mt-3'>Sell your mobile for instant cash</p>
+                    <p className='sell-title mx-5 mt-3'>{type} your mobile for instant cash</p>
                     <div className='row px-5 mt-5'>
                         <div className='col-12 col-md-7 d-flex flex-column'>
                             <div
                                 className='sell-input d-flex justify-content-between align-items-center border px-3 px-md-5'>
                                 <input className='w-100 py-3 me-3' type="text"
-                                       placeholder='Search Your Mobile to Sell'/>
+                                       placeholder='Search Your Mobile to Process'/>
                                 <i className='fa fa-search text-danger'/>
                             </div>
 
@@ -48,7 +48,7 @@ const Home = () => {
                                 {
                                     brands.map(item => {
                                         return (
-                                            <NavLink to='/sell/list'>
+                                            <NavLink to='/process/models'>
                                                 <img key={item.key} className='cursor-pointer h-75' src={item.img}
                                                      alt=''/>
                                             </NavLink>
